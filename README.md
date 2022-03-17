@@ -32,5 +32,5 @@ The local map is generated via `pcl::octree::OctreePointCloudSearch`, which sear
 
 Final pose obtained by minimizing by the depth residual between the depth image and the projection of local point cloud using ceres optimization
 <p float = "left">
-  <img src = "mages/transformation.jpg" alt="1" />
+  <img src = "mages/transformation.jpg" alt="1" width="400" />
 </p>
