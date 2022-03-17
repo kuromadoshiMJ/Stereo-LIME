@@ -1,0 +1,8 @@
+depth_topic_name: "/carla/vehicle/086/camera/depth/front/image_depth"
+scharr_topic_name : "/scharrImage" 
+vins_topic_name : "/vins_estimator/camera_pose"
+pcd_path : "/home/pranav/ws/Complete_Cloud.pcd"
+fx : "280.0830152838839"
+fy : "280.0830152838839"
+cx : "400.0"
+cy : "300.0"

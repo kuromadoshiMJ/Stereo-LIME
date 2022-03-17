@@ -1,0 +1,16 @@
+numDisparities: 12 #16k
+SADWindowSize : 2 #2k+1
+uniquenessRatio : 1 #between 5-15 is good
+speckleWindowSize : 150 #50-200 range, 0 to disable
+speckleRange : 2 #1-2 good, auto multiplication by 16
+disp12MaxDiff : 200 #tunable
+mindisaprity : -64 #can be greater than 0
+prefilterCap : 31 #31 or 4
+wls_lamda : 8000.00
+wls_sigma : 1.5
+#for P1,P2 the calculated values through blocksize is better
+#P1: 600
+#P2: 2400
+
+name1 : "/home/pranav/Downloads/data_scene_flow/testing/image_2/000000_10.png"
+name2 : "/home/pranav/Downloads/data_scene_flow/testing/image_2/000000_11.png"

@@ -1,0 +1,10 @@
+numDisparities: 16 #16k
+SADWindowSize : 3 #2k+1
+uniquenessRatio : 1 #between 5-15 is good
+speckleWindowSize : 200 #50-200 range, 0 to disable
+speckleRange : 1 #1-2 good, auto multiplication by 16
+disp12MaxDiff : 1000 #tunable
+mindisaprity : -80 #can be greater than 0
+prefilterCap : 4 #31 or 4
+wls_lamda : 8000.00
+wls_sigma : 1.5
