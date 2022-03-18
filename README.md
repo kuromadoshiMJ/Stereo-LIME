@@ -21,7 +21,7 @@ Example, `depth image`:
 
 ## Local Map Generation
 
-The local map is generated via `pcl::octree::OctreePointCloudSearch`, which searches for neighbours within a voxel at a given point which in our case is the `initial pose` obtained from `VINS-Fusion`(https://github.com/HKUST-Aerial-Robotics/VINS-Fusion).
+The local map is generated via `pcl::octree::OctreePointCloudSearch`, which searches for neighbours within a voxel at a given point which in our case is the `initial pose` obtained from `[VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)`.
 
 <p float="left">
   <img src="images/local1.png" alt="1" width="400"/>
@@ -30,7 +30,7 @@ The local map is generated via `pcl::octree::OctreePointCloudSearch`, which sear
 
 ## Localization
 
-Final pose obtained by minimizing by the depth residual between the depth image and the projection of local point cloud using ceres optimization
+The final camera pose is obtained by minimizing the depth residual which is the difference between the depth of the map point in local map and the corresponding stereo depth. This non-linear optimization problem is solved by `Ceres-Solver`.
 <p float = "left">
   <img src = "images/transformation.jpg" alt="localize" width="400" />
 </p>
