@@ -1,6 +1,8 @@
 # Stereo-LIME
 ## Stereo Camera assisted Localization in Mapped Environment
 
+<img src="images/pipeline.png" alt="6" width="800"/>
+
 # Prerequisites
 ### **Ceres Solver**
 Follow [Ceres Installation](http://ceres-solver.org/installation.html)
