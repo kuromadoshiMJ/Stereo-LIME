@@ -23,7 +23,7 @@ Example, `depth image`:
 
 ## Local Map Generation
 
-The local map is generated via `pcl::octree::OctreePointCloudSearch`, which searches for neighbours within a voxel at a given point which in our case is the `initial pose` obtained from `[VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)`.
+The local map is generated via `pcl::octree::OctreePointCloudSearch`, which searches for neighbours within a voxel at a given point which in our case is the `initial pose` obtained from [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion).
 
 <p float="left">
   <img src="images/local1.png" alt="1" width="400"/>
