@@ -30,7 +30,7 @@ The local map is generated via `pcl::octree::OctreePointCloudSearch`, which sear
 The final camera pose is obtained by minimizing the depth residual which is the difference between the depth of the map point in local map and the corresponding stereo depth. This non-linear optimization problem is solved by `Ceres-Solver`.
 <p float = "left">
   <img src = "images/transformation.jpg" alt = "localize" width = "400" />
-  <img src = "image/The_Math.png" alt = "themath" width = "400" />
+  <img src = "image/TheMath.png" alt = "themath" width = "400" />
 </p>
 
 ## Results
@@ -38,8 +38,8 @@ The final camera pose is obtained by minimizing the depth residual which is the 
 The green line shows the groud_truth path of the ego vehicle and the red line shows path generated from the localization pipeline
 
 <p float="left">
-  <img src = "images/Result.png" alt = "localize" width = "400" />
-  <img src = "image/Result_zoom.png" alt = "themath" width = "400" />
+  <img src = "images/Result.png" alt = "result" width = "400" />
+  <img src = "image/Resultzoom.png" alt = "zoomresult" width = "400" />
 
 ## Prerequisites
 ### **Ceres Solver**
