@@ -1,13 +1,20 @@
 # Stereo-LIME
 ## Stereo Camera assisted Localization in Mapped Environment
-
+Achives accurate localization with the help of stereo-camera in a pre-mapped pointcloud environment
+## Pipeline
 <img src="images/pipeline.png" alt="6" width="800"/>
 
-# Prerequisites
+## Prerequisites
 ### **Ceres Solver**
 Follow [Ceres Installation](http://ceres-solver.org/installation.html)
 
-Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561) and [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
+### **OpenCV**
+Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561)
+### **PCL**
+Install [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
+
+### **VINS-Fusion**
+Visual Tracking module install [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 
 ## Depth Map Generation
 
@@ -34,5 +41,6 @@ The local map is generated via `pcl::octree::OctreePointCloudSearch`, which sear
 
 The final camera pose is obtained by minimizing the depth residual which is the difference between the depth of the map point in local map and the corresponding stereo depth. This non-linear optimization problem is solved by `Ceres-Solver`.
 <p float = "left">
-  <img src = "images/transformation.jpg" alt="localize" width="400" />
+  <img src = "images/transformation.jpg" alt = "localize" width = "400" />
+  <img src = "image/TheMath.png" alt = "themath" width = "400" />
 </p>
