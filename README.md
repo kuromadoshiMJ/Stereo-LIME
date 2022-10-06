@@ -38,8 +38,8 @@ The final camera pose is obtained by minimizing the depth residual which is the 
 The green line shows the groud_truth path of the ego vehicle and the red line shows path generated from the localization pipeline
 
 <p float="left">
-  <img src = "images/Result.png" alt = "result" width = "400" />
-  <img src = "images/Resultzoom.png" alt = "zoomresult" width = "400" />
+  <img src = "images/Result.png" alt = "result" width = "800" />
+  <img src = "images/Resultzoom.png" alt = "zoomresult" width = "800" />
 
 ## Prerequisites
 ### **Ceres Solver**
