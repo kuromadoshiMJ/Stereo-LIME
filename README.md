@@ -4,18 +4,6 @@ Achives accurate localization with the help of stereo-camera in a pre-mapped poi
 ## Pipeline
 <img src="images/pipeline.png" alt="6" width="800"/>
 
-## Prerequisites
-### **Ceres Solver**
-Follow [Ceres Installation](http://ceres-solver.org/installation.html)
-
-### **OpenCV**
-Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561)
-### **PCL**
-Install [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
-
-### **VINS-Fusion**
-Visual Tracking module install [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
-
 ## Depth Map Generation
 
 The left and the right image from the stereo camera is used to compute the disparity map. From disparity map, we obtain the depth of a point using the formula:
@@ -42,5 +30,22 @@ The local map is generated via `pcl::octree::OctreePointCloudSearch`, which sear
 The final camera pose is obtained by minimizing the depth residual which is the difference between the depth of the map point in local map and the corresponding stereo depth. This non-linear optimization problem is solved by `Ceres-Solver`.
 <p float = "left">
   <img src = "images/transformation.jpg" alt = "localize" width = "400" />
-  <img src = "image/TheMath.png" alt = "themath" width = "400" />
+  <img src = "image/The_Math.png" alt = "themath" width = "400" />
 </p>
+
+## Results
+
+The green line shows the groud_truth path of the ego vehicle and the red line shows path generated from the localization pipeline
+
+<p float="left">
+  <img src = "images/Result.png" alt = "localize" width = "400" />
+  <img src = "image/Result_zoom.png" alt = "themath" width = "400" />
+
+## Prerequisites
+### **Ceres Solver**
+Follow [Ceres Installation](http://ceres-solver.org/installation.html)
+
+### **OpenCV**
+Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561)
+### **PCL**
+Install [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
