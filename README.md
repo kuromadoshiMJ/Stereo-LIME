@@ -1,6 +1,14 @@
 # Stereo-LIME
 ## Stereo Camera assisted Localization in Mapped Environment
-Achives accurate localization with the help of stereo-camera in a pre-mapped pointcloud environment
+Achieves accurate localization with the help of stereo-camera in a pre-mapped pointcloud environment
+## Prerequisites
+### **Ceres Solver**
+Follow [Ceres Installation](http://ceres-solver.org/installation.html)
+
+### **OpenCV**
+Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561)
+### **PCL**
+Install [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
 ## Pipeline
 <img src="images/pipeline.png" alt="6" width="800"/>
 
@@ -41,11 +49,4 @@ The green line shows the groud_truth path of the ego vehicle and the red line sh
   <img src = "images/Result.png" alt = "result" width = "800" />
   <img src = "images/Resultzoom.png" alt = "zoomresult" width = "800" />
 
-## Prerequisites
-### **Ceres Solver**
-Follow [Ceres Installation](http://ceres-solver.org/installation.html)
 
-### **OpenCV**
-Install [OpenCV](https://gist.github.com/Mahedi-61/804a663b449e4cdb31b5fea96bb9d561)
-### **PCL**
-Install [PCL](https://pcl.readthedocs.io/projects/tutorials/en/master/) from source.
